@@ -124,6 +124,8 @@
             <input type="text" name="username" required><br>
             <label>Password:</label><br>
             <input type="password" name="password" required><br>
+            <label>Alamat:</label><br>
+            <input type="text" name="address" required placeholder="Masukkan alamat lengkap"><br>
             <button type="submit">Signup</button>
         </form>
         <div style="text-align:center;margin-top:18px;">
@@ -138,7 +140,8 @@
             lastname: document.querySelector('input[name="lastname"]').value,
             email: document.querySelector('input[name="email"]').value,
             username: document.querySelector('input[name="username"]').value,
-            password: document.querySelector('input[name="password"]').value
+            password: document.querySelector('input[name="password"]').value,
+            address: document.querySelector('input[name="address"]').value
         };
         try {
             const response = await fetch('/signup', {
