@@ -14,6 +14,11 @@ Route::get('/', function () {
 Route::get('/products', function() {
     return view('products'); // Jika file ada di resources/views/
 })->name('products');
+
+Route::get('/customer/products', function() {
+    return view('productsCustomer'); // Jika file ada di resources/views/
+})->name('productsCustomer');
+
 // Admin
 Route::get('/admin/dashboard', function() {
     return view('admin.dashboard'); // Buat view dashboard admin
